@@ -3,15 +3,15 @@ package org.example;
 public class Main {
 
     public static void main(String[] args) {
-      /* print();
-        sum();
+        print();
+        checkSumSing();
         printColor();
         compareNumbers();
         System.out.println(isSumInRange(7, 9));
         checkNumber(9);
         isPositive(-2);
         printString("Hello", 4);
-        System.out.println((isLeapYear(2019) ? "true" : "false"));*/
+        System.out.println((isLeapYear(2019) ? "true" : "false"));
         int[] array = {1, 1, 0, 0, 1, 0, 1, 1, 1};
         printArray(array);
     }
@@ -20,10 +20,6 @@ public class Main {
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
-    }
-
-    static void sum() {
-        checkSumSing();
     }
 
     static void checkSumSing() {
