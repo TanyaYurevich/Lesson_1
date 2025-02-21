@@ -14,6 +14,10 @@ public class Main {
         System.out.println((isLeapYear(2019) ? "true" : "false"));
         int[] array = {1, 1, 0, 0, 1, 0, 1, 1, 1};
         printArray(array);
+        int[] array1 = new int[100];
+        nullArray(array1);
+        int[] array2 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        numberArray(array2);
     }
 
     static void print() {
@@ -101,5 +105,26 @@ public class Main {
         }
         System.out.println();
     }
+
+
+    public static void nullArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+        }
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+
+    }
+
+    public static void numberArray(int[] array) {
+        for (int i = 0; i < array.length;i++) {
+            if (array[i] < 6) {
+                array[i] *= 2; }
+            }
+            for (int num : array) {
+                System.out.println(num + " ");
+            }
+        }
 
 }
